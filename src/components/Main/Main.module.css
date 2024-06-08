@@ -1,0 +1,70 @@
+.mainList {
+    list-style: none;
+}
+
+.mainLink {
+    text-decoration: none;
+}
+
+.postContainer {
+    border: 1px solid #ccc;
+    padding: 16px;
+}
+
+.dateAndCategories {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    height: 27px;
+}
+
+.categories {
+    display: flex;
+}
+
+.categoriesList {
+    color:  #0068D3;
+    border: 1px solid #0068D3;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    padding: 5px;
+    margin-right: 8px;
+    
+}
+
+.title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+    margin-top: 0.5rem;
+    color: black;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin:0; 
+    padding: 0;
+    max-width: 768px;
+}
+.date {
+    color: #999;
+    font-size: 0.8rem;
+}
+.content {
+    max-height: 48px;
+    overflow: hidden;
+    color: black;
+}
+
+.mainContainer {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 18px;
+}
+
+.post {
+    max-width: 616px;
+}
+

@@ -1,0 +1,78 @@
+.formTitle {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.formContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.formField {
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.contentField {
+    display: flex;
+    margin-bottom:45px;
+}
+.form {
+    padding: 40px 0;
+    width: 100%;
+    max-width: 800px;
+}
+
+.label {
+    width: 25%;
+    display: flex;
+    align-items: center;
+}
+
+.input, .textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.inputAndError {
+    width: 75%;
+}
+
+.errorMessage {
+    margin: 0px;
+    color: #b91c1c
+}
+
+.textarea {
+    height: 195px;
+}
+
+.buttonGroup {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+button {
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.submitButton {
+    background-color: #1F2937;
+    color: white;
+    padding: 0 15px;
+}
+
+.clearButton {
+    padding: 0 15px;
+}
