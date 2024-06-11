@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./ContactForm.module.css";
 
-const ContactForm = () => {
+const ContactForm: React.FC = () => {
   type ValuesType = { name: string; mailAddress: string; content: string };
   type ErrorsType = { name?: string; mailAddress?: string; content?: string };
 

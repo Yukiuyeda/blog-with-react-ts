@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 // import { posts } from '../../data/posts';
 import styles from "./Main.module.css";
 import { Link } from "react-router-dom";
-import { Post, PostsType } from "../../data/post";
+import { Post } from "../../data/post";
 
-const Main = () => {
+const Main: React.FC = () => {
   const [posts, setPosts] = useState<Post[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
@@ -14,7 +14,7 @@ const Main = () => {
       const res = await fetch(
         "https://1hmfpsvto6.execute-api.ap-northeast-1.amazonaws.com/dev/posts"
       );
-      const data = await res.json() as PostsType;
+      const data: {posts: Post[]} = await res.json();
       // console.log(data);
       setPosts(data.posts);
       setIsLoading(false);
